@@ -5,5 +5,7 @@ $('.form').submit((e) => {
     const randomNum = Math.round(Math.random() * maxNum);
     const link = 'https://www.furaffinity.net/view/' + randomNum;
 
-    $('#generatedLink').text(link).attr('href', link).show();
+    $('.logo img').hide();
+    $('.form').addClass('header-bar').addClass('fixed-top').removeClass('flex-column');
+    $('#iframe').attr('src', link).show();
 });

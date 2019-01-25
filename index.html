@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <title>FA Drinking Game</title>
+    <title>FA Roulette</title>
 
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet"/>
     <link href="assets/css/main.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="row text-center align-items-center">
-    <div class="w-100 row">
-        <form class="form">
+<div class="d-flex h-100 align-items-center justify-content-center">
+    <form class="form align-items-center d-flex flex-column">
+        <div class="logo d-flex align-items-center justify-content-center">
             <img alt="" class="mb-4" src="assets/images/fa_logo.png"/>
-            <h1 class="h3 mb-3 font-weight-normal">FA Drinking Game</h1>
+        </div>
+        <h1 class="h3 mb-3 w-25 text-center font-weight-normal">FA Roulette</h1>
+        <div class="input-group mb-3">
             <label class="sr-only" for="submissionNumber">Latest Submission Number:</label>
-            <input autofocus class="form-control" id="submissionNumber" placeholder="Highest Submission Number" required type="number">
-            <button class="btn btn-lg btn-info btn-block" type="submit">Generate Link</button>
-            <p class="mb-0 mt-3">
-                <strong><a id="generatedLink" target="_blank"></a></strong>
-            </p>
-        </form>
-    </div>
+            <input autofocus class="form-control" id="submissionNumber" placeholder="Latest Submission"
+                   required type="number">
+            <div class="input-group-append">
+                <button class="btn btn-outline-info btn-block" type="submit">Go!</button>
+            </div>
+        </div>
+    </form>
+    <iframe class="col-12" id="iframe"></iframe>
 </div>
-<footer class="row text-center align-items-center">
-    <p class="w-100 mt-5 mb-3 text-muted">IgiCodes &copy; 2019</p>
+<footer>
+    <div class="d-flex fixed-bottom align-items-center justify-content-center">
+        <p class="mb-3 text-muted">IgiCodes &copy; 2019</p>
+    </div>
 
     <script crossorigin="anonymous"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

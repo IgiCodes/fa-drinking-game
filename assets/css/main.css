@@ -5,15 +5,23 @@ footer.row {
     height: 10vh;
 }
 
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
 .row {
     width: 100%;
 }
 
 .form {
-    width: 100%;
-    max-width: 330px;
     padding: 15px;
     margin: auto;
+}
+
+.header-bar {
+    height: 5rem;
 }
 
 .form .form-control {
@@ -34,6 +42,10 @@ footer.row {
     border-bottom-left-radius: 0;
 }
 
-.form #generatedLink {
+#iframe {
     display: none;
+    border: none;
+    margin: 5rem 0 0;
+    height: calc(100% - 5rem);
+    padding: 0;
 }
