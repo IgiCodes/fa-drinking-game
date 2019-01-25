@@ -1,12 +1,12 @@
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
+body > div.row {
+    height: 80vh;
+}
+footer.row {
+    height: 10vh;
 }
 
-html,
-body {
-    height: 100%;
+.row {
+    width: 100%;
 }
 
 .form {
