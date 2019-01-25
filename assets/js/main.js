@@ -7,5 +7,6 @@ $('.form').submit((e) => {
 
     $('.logo img').hide();
     $('.form').addClass('header-bar').addClass('fixed-top').removeClass('flex-column');
+    $('.form h1').addClass('w-25');
     $('#iframe').attr('src', link).show();
 });
